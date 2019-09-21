@@ -16,26 +16,25 @@ body {
     flex-direction: column;
 }
 
-.box-2-left {
-    display: flex;
-    flex-direction: column;
-}
-
-.avt-left img {
+.box-1-left .avt-left img {
     border-radius: 20%;
     margin-top: 30px;
 }
 
-.text-left h4 {
+.box-1-left .text-left {
+    background-color: red;
+}
+
+.box-1-left .text-left h4 {
     color: rgb(111, 111, 126);
     font-size: 1.3rem;
 }
 
-.text-left h4 span {
+.box-1-left .text-left h4 span {
     font-weight: 900;
 }
 
-.text-left h6 {
+.box-1-left .text-left h6 {
     background-color: rgba(136, 136, 136, 0.4);
     color: rgb(153, 145, 145);
     border-radius: 20%;
@@ -44,6 +43,11 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 3px;
+}
+
+.box-2-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .box-2-left .content .list{
@@ -55,14 +59,27 @@ body {
     color: #888;
 }
 
+
+
 .box-2-left .content .list li:nth-child(1)::before{
-    content: url('../img/1x/calendar.svg');
-    /* quan trongj laf select ko dc lun ne */
-    /* đó . v là mỗi lần phải tạo 2 file
-    
-    */
+    content: url('../img/icon/calendar.svg');
 }
 
+.box-2-left .content .list li:nth-child(2)::before{
+    content: url('../img/icon/place-localizer.svg');
+}
+
+.box-2-left .content .list li:nth-child(3)::before{
+    content: url('../img/icon/mail.svg');
+}
+
+.box-2-left .content .list li:nth-child(4)::before{
+    content: url('../img/icon/icon-app.svg');
+}
+
+.box-2-left .content .list li:nth-child(5)::before{
+    content: url('../img/icon/skype.svg');
+}
 
 .box-2-left .button-left{
     background: rgb(0,129,255);
@@ -78,14 +95,16 @@ body {
     display: block ;
     font-size: 0.8rem;
     color: white;
-    
     word-spacing: 3px;
     letter-spacing: 1px;
     font-weight: 700 ; 
     text-decoration: none;
     width: 100% ; 
     height: 100% ;
-   
+}
+
+.box-2-left .button-left a::before {
+    content: url('../img/icon/download.svg');
 }
 
 
