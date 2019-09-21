@@ -1,14 +1,16 @@
 body {
     font-family: sans-serif;
-
+    background-color: rgba(155, 147, 147, 0.2);
 }
 
 .inline {
     display: flex;
     flex-direction: column;
-    background-color: rgba(196, 212, 212, 0.4);
-    width: 70%;
+    background-color: white;
+    width: 20%;
     text-align: center;
+    margin-left: 30px;
+    border-radius: 20px;
 }
 
 .box-1-left {
@@ -27,14 +29,14 @@ body {
 }
 
 .box-1-left .text-left h4 span {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .box-1-left .text-left h6 {
-    background-color: rgba(211, 198, 198, 0.4);
-    color: rgb(153, 145, 145);
+    background-color: rgba(136, 136, 136, 0.1);
+    color: rgba(153, 145, 145, 1.9);
     border-radius: 20px;
-    width: 30%;
+    width: 40%;
     margin: auto;
     text-align: center;
     padding: 10px;
@@ -69,6 +71,9 @@ body {
 .box-2-left {
     display: flex;
     flex-direction: column;
+    background-color: rgba(132, 182, 197, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .box-2-left .content .list{
@@ -78,7 +83,9 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     color: #888;
-    position : relative
+    position : relative;
+    font-size: 0.9rem;
+    line-height: 30px;
 }
 
 
@@ -126,7 +133,7 @@ body {
 }
 .box-2-left .button-left a {
     display: block ;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: white;
     word-spacing: 3px;
     letter-spacing: 1px;
@@ -140,7 +147,7 @@ body {
 .box-2-left .button-left a::before {
     content: url('../img/icon/download.svg');
     position: absolute;
-    left: 20%;
+    left: 6%;
 }
 
 
